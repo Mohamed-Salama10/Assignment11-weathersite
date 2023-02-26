@@ -10,6 +10,233 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <header class="vh-100 color2">
+      <!--the nav bar code-->
+      <div class="p-5" id="navBarDiv">
+        <nav class="navbar navbar-expand-lg w-60 m-auto">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white d-flex" href="#">
+              <i class="fa-solid fa-cloud fs-1 me-2 weather-icon"></i>
+              <div>
+                <h6 class="fs-6">Weather</h6>
+                <h6 class="fs-6">tagline goes here</h6>
+              </div>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+              <ul
+                class="navbar-nav ms-auto w-75 d-flex justify-content-evenly me-5"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link active home-button rounded-pill px-4 py-1"
+                    aria-current="page"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-buttons rounded-pill px-4 py-1"
+                    href="#"
+                    >News</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-buttons rounded-pill px-4 py-1"
+                    href="#"
+                    >Live cameras</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-buttons rounded-pill px-4 py-1"
+                    href="#"
+                    >photos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link nav-buttons rounded-pill px-4 py-1"
+                    href="#"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!--the content code-->
+      <div class="main-body">
+        <div class="main-content py-5">
+          <div class="w-60 m-auto">
+            <div
+              class="input-group mb-3 p-2 m-auto rounded-5 border-0 search-input"
+            >
+              <input
+                type="text"
+                class="form-control bg-transparent border-0 search-input"
+                placeholder="Find your location"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary text-white rounded-pill border-0 find-btn"
+                type="button"
+                id="button-addon2"
+              >
+                Find
+              </button>
+            </div>
+
+            <div>
+              <div class="container-fluid">
+                <div class="row">
+                  <!--First card-->
+
+                  <div class="col-lg-4 col-md-4">
+                    <div
+                      class="rounded-top-3 d-flex justify-content-between align-items-center pt-2 h-auto px-1 color1"
+                    >
+                      <p class="text-white">saturday</p>
+                      <p class="text-white">25February</p>
+                    </div>
+                    <div class="p-3 color2 cards">
+                      <h5 class="location-text text-white">Cairo</h5>
+                      <h2 class="temprature-txt text-white ms-2 my-3">15.c</h2>
+                      <i
+                        class="fa-solid fa-sun ms-4 my-3 fs-1 text-warning"
+                      ></i>
+
+                      <h6 class="weather-status">sunny</h6>
+                      <div class="d-flex justify-content-between p-1 fs-5">
+                        <div class="d-flex">
+                          <i
+                            class="fa-solid fa-umbrella text-white me-1 mt-1"
+                          ></i>
+                          <p class="text-white">20%</p>
+                        </div>
+
+                        <div class="d-flex">
+                          <i class="fa-solid fa-wind text-white me-1 mt-1"></i>
+                          <p class="text-white">20%</p>
+                        </div>
+
+                        <div class="d-flex">
+                          <i
+                            class="fa-solid fa-compass text-white me-1 mt-1"
+                          ></i>
+                          <p class="text-white">20%</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Second card-->
+                  <div class="col-lg-4 col-md-4 overflow-auto">
+                    <div
+                      class="rounded-top-3 d-flex justify-content-center align-items-center pt-2 h-auto px-1 color1"
+                    >
+                      <p class="text-white">saturday</p>
+                    </div>
+                    <div
+                      class="color2 cards d-flex flex-column align-items-center"
+                    >
+                      <div class="mt-4">
+                        <i
+                          class="fa-solid fa-sun my-3 fs-1 text-warning mb-4"
+                        ></i>
+                        <h5 class="location-text text-white mb-2">7.2'c</h5>
+                        <h6 class="location-text text-white mb-4">-4.3</h6>
+
+                        <h6 class="mb-4 weather-status">sunny</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--third card-->
+
+                  <div class="col-lg-4 col-md-4 overflow-auto">
+                    <div
+                      class="rounded-top-3 d-flex justify-content-center align-items-center pt-2 h-auto px-1 color1"
+                    >
+                      <p class="text-white">saturday</p>
+                    </div>
+                    <div
+                      class="color2 cards d-flex flex-column align-items-center"
+                    >
+                      <div class="mt-4">
+                        <i
+                          class="fa-solid fa-sun my-3 fs-1 text-warning mb-4"
+                        ></i>
+                        <h5 class="location-text text-white mb-2">7.2'c</h5>
+                        <h6 class="location-text text-white mb-4">-4.3</h6>
+
+                        <h6 class="mb-4 weather-status">sunny</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="m-auto w-60 d-flex justify-content-between">
+        <div
+          class="input-group p-1 rounded-5 border-0 search-input mt-5 w-60 height"
+        >
+          <input
+            type="text"
+            class="form-control bg-transparent border-0 search-input height"
+            placeholder="Find your location"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary text-white rounded-pill border-0 sub-btn height"
+            type="button"
+            id="button-addon2"
+          >
+            Find
+          </button>
+        </div>
+        <div class="mt-5 d-flex me-5">
+
+
+
+          <div class="social-icon d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="  social-icon d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <div class="  social-icon d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-google"></i>
+          </div>
+          <div class="  social-icon d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </header>
+
+    <!--Script linking-->
     <script src="./js/all.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
