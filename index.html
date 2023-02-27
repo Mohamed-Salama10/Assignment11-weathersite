@@ -87,10 +87,11 @@
             >
               <input
                 type="text"
-                class="form-control bg-transparent border-0 search-input"
+                class="form-control bg-transparent border-0 search-input text-white"
                 placeholder="Find your location"
                 aria-label="Recipient's username"
                 aria-describedby="button-addon2"
+                id="findLocationInput"
               />
               <button
                 class="btn btn-outline-secondary text-white rounded-pill border-0 find-btn"
@@ -110,17 +111,27 @@
                     <div
                       class="rounded-top-3 d-flex justify-content-between align-items-center pt-2 h-auto px-1 color1"
                     >
-                      <p class="text-white">saturday</p>
-                      <p class="text-white">25February</p>
+                      <p class="text-white" id="currentDay"></p>
+                      <p class="text-white" id="currentDate"></p>
                     </div>
                     <div class="p-3 color2 cards">
-                      <h5 class="location-text text-white">Cairo</h5>
-                      <h2 class="temprature-txt text-white ms-2 my-3">15.c</h2>
-                      <i
-                        class="fa-solid fa-sun ms-4 my-3 fs-1 text-warning"
-                      ></i>
+                      <h5 class="location-text text-white" id="location">
+                        Cairo
+                      </h5>
+                      <h2
+                        class="temprature-txt text-white ms-2 my-3"
+                        id="currentTemp"
+                      >
+                        15°c
+                      </h2>
+                      <img
+                        class="ms-4 my-3 fs-1 text-warning"
+                        id="currentWeatherIcon"
+                      />
 
-                      <h6 class="weather-status">sunny</h6>
+                      <h6 class="weather-status" id="currentWeatherStatus">
+                        sunny
+                      </h6>
                       <div class="d-flex justify-content-between p-1 fs-5">
                         <div class="d-flex">
                           <i
@@ -138,7 +149,7 @@
                           <i
                             class="fa-solid fa-compass text-white me-1 mt-1"
                           ></i>
-                          <p class="text-white">20%</p>
+                          <p class="text-white">East</p>
                         </div>
                       </div>
                     </div>
@@ -148,19 +159,18 @@
                     <div
                       class="rounded-top-3 d-flex justify-content-center align-items-center pt-2 h-auto px-1 color1"
                     >
-                      <p class="text-white">saturday</p>
+                      <p class="text-white forecast-day" id="nextDay">saturday</p>
                     </div>
                     <div
                       class="color2 cards d-flex flex-column align-items-center"
                     >
-                      <div class="mt-4">
-                        <i
-                          class="fa-solid fa-sun my-3 fs-1 text-warning mb-4"
-                        ></i>
-                        <h5 class="location-text text-white mb-2">7.2'c</h5>
-                        <h6 class="location-text text-white mb-4">-4.3</h6>
+                      <div class="mt-4" id="nextDayData">
+                        <img
+                          class="my-3 fs-1 text-warning mb-4"
+                        >
+                        <h5 class="location-text text-white mb-2" id="nextDayTemp">7.2'c</h5>
 
-                        <h6 class="mb-4 weather-status">sunny</h6>
+                        <h6 class="mb-4 weather-status" id="nextDayCondition">sunny</h6>
                       </div>
                     </div>
                   </div>
@@ -171,17 +181,16 @@
                     <div
                       class="rounded-top-3 d-flex justify-content-center align-items-center pt-2 h-auto px-1 color1"
                     >
-                      <p class="text-white">saturday</p>
+                      <p class="text-white forecast-day"></p>
                     </div>
                     <div
                       class="color2 cards d-flex flex-column align-items-center"
                     >
-                      <div class="mt-4">
-                        <i
-                          class="fa-solid fa-sun my-3 fs-1 text-warning mb-4"
-                        ></i>
+                      <div class="mt-4" id="dayAfterTomorrow">
+                        <img
+                          class="my-3 fs-1 text-warning mb-4"
+                        >
                         <h5 class="location-text text-white mb-2">7.2'c</h5>
-                        <h6 class="location-text text-white mb-4">-4.3</h6>
 
                         <h6 class="mb-4 weather-status">sunny</h6>
                       </div>
@@ -213,25 +222,26 @@
           </button>
         </div>
         <div class="mt-5 d-flex me-5">
-
-
-
-          <div class="social-icon d-flex justify-content-center align-items-center">
+          <div
+            class="social-icon d-flex justify-content-center align-items-center"
+          >
             <i class="fa-brands fa-facebook-f"></i>
           </div>
-          <div class="  social-icon d-flex justify-content-center align-items-center">
+          <div
+            class="social-icon d-flex justify-content-center align-items-center"
+          >
             <i class="fa-brands fa-twitter"></i>
           </div>
-          <div class="  social-icon d-flex justify-content-center align-items-center">
+          <div
+            class="social-icon d-flex justify-content-center align-items-center"
+          >
             <i class="fa-brands fa-google"></i>
           </div>
-          <div class="  social-icon d-flex justify-content-center align-items-center">
+          <div
+            class="social-icon d-flex justify-content-center align-items-center"
+          >
             <i class="fa-brands fa-pinterest"></i>
           </div>
-
-
-
-
         </div>
       </div>
     </header>
