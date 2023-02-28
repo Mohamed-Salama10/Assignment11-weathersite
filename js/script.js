@@ -81,14 +81,17 @@ function displayCurrentDay(currentDay, location) {
     date.getDate(currentDay.date) + month[date.getMonth(currentDay.date)];
   currentLocation.innerHTML = location;
   temprature.innerHTML = currentDay.day.avgtemp_c + "°c";
-  currentWeatherIcon.setAttribute("src", currentDay.day.condition.icon);
+  currentWeatherIcon.setAttribute(
+    "src",
+    `https:${currentDay.day.condition.icon}`
+  );
   currentWeatherStatus.innerHTML = currentDay.day.condition.text;
 }
 
 function displayFollowingDays(day, dayData, dayHtmlElements) {
   const d = new Date(dayData.date);
   day.innerHTML = weekday[d.getDay(dayData.date)];
-  dayHtmlElements[0].setAttribute("src", dayData.day.condition.icon);
+  dayHtmlElements[0].setAttribute("src", `https:${dayData.day.condition.icon}`);
 
   dayHtmlElements[1].innerHTML = dayData.day.avgtemp_c + "°c";
   dayHtmlElements[2].innerHTML = dayData.day.condition.text;
